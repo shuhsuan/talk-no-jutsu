@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/talk-no-jutsu/static/css/main.ce8e778a.css",
+    "main.js": "/talk-no-jutsu/static/js/main.627dc8aa.js",
+    "static/js/787.4b44a668.chunk.js": "/talk-no-jutsu/static/js/787.4b44a668.chunk.js",
+    "index.html": "/talk-no-jutsu/index.html",
+    "main.ce8e778a.css.map": "/talk-no-jutsu/static/css/main.ce8e778a.css.map",
+    "main.627dc8aa.js.map": "/talk-no-jutsu/static/js/main.627dc8aa.js.map",
+    "787.4b44a668.chunk.js.map": "/talk-no-jutsu/static/js/787.4b44a668.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce8e778a.css",
+    "static/js/main.627dc8aa.js"
+  ]
+}
