@@ -40,6 +40,7 @@ function App() {
       <input autocomplete="off" id="name" onKeyDown={nameEnter} 
       placeholder="Your username"/>
       <p id="displayName"></p>
+      <div id="messages"></div>
       <div className="inputBit">
         <input
           id="input"
@@ -52,7 +53,6 @@ function App() {
           <FontAwesomeIcon icon="fa-solid fa-paper-plane" />
         </button>
       </div>
-      <div id="messages"></div>
     </div>
   );
 }
