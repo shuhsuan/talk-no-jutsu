@@ -2,7 +2,7 @@
   "name": "talk-no-jutsu",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shuhsuan.github.io/talk-no-jutsu",
+  "homepage": "https://shuhsuan.github.io/talk-no-jutsu/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
