@@ -7,10 +7,9 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fas, faPaperPlane);
 
-
-
 function App() {
   const [input, setInput] = useState("");
+  const [name, setName] = useState("");
 
   const theInput = document.getElementById("input");
   const messages = document.getElementById("messages");
@@ -18,18 +17,29 @@ function App() {
   const handleChange = (e) => {
     if (e.key === "Enter") {
       theInput.value = "";
-      messages.innerHTML += "<p>" + input + "</p>";
+      messages.innerHTML += "<p>" + name + ": " + input + "</p>";
     }
   };
 
   const handleClick = () => {
-    messages.innerHTML = "<p>" + input + "</p>";
+    messages.innerHTML = "<p>" + name + ": " + input + "</p>";
     theInput.value = "";
   };
 
+  const nameEnter = (e) => {
+    if(e.key==="Enter")
+    {
+      setName(e.target.value)
+      document.getElementById("displayName").innerHTML = "Your username has been set to " + e.target.value; 
+      document.getElementById("name").value="";
+    }
+  }
+
   return (
     <div className="App">
-      <input placeholder="Your username"></input>
+      <input autocomplete="off" id="name" onKeyDown={nameEnter} 
+      placeholder="Your username"/>
+      <p id="displayName"></p>
       <div className="inputBit">
         <input
           id="input"
@@ -42,7 +52,6 @@ function App() {
           <FontAwesomeIcon icon="fa-solid fa-paper-plane" />
         </button>
       </div>
-
       <div id="messages"></div>
     </div>
   );
